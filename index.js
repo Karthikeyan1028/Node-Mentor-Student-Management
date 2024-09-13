@@ -27,7 +27,6 @@ app.post("/mentor", async (req, res) => {
     res.status(400).send(error);
   }
 });
-
 // CREATE Student
 app.post("/student", async (req, res) => {
   try {
@@ -134,6 +133,8 @@ app.get("/student/:studentId/pMentor", async (req, res) => {
     res.status(400).send(error);
   }
 });
+
+
 
 app.listen(PORT, () => {
   console.log("Server is running on PORT:", PORT);
